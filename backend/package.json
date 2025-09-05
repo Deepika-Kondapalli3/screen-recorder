@@ -4,8 +4,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "npm rebuild sqlite3 --build-from-source"
   },
+  "engines": {
+  "node": "18.x"
+},
+
   "keywords": [],
   "author": "",
   "license": "ISC",
